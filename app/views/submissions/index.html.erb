@@ -1,0 +1,19 @@
+<% content_for :primary_content do  %>
+
+<% if @submissions.exists? %>
+ <%= render @submissions %>
+<% else %>
+  <div class="p-10 text-center">
+    <%= render_svg "icons/empty" %>
+    <p class="mb-4">Wow such empty ...</p>
+    <%= link_to "Create a new submission", new_submission_path, class: "btn btn-purple btn-small" %>
+  </div>
+
+  <% end %>
+<% end %>
+
+<% content_for :secondary_content do %>
+<%= link_to 'New Submission', new_submission_path %>
+<% end %>
+
+<%= render "basic_layout" %>

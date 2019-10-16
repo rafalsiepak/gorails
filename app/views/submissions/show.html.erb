@@ -1,0 +1,8 @@
+<%= @submission.title %>
+<%= @submission.body %>
+<%= @submission.url %>
+
+<%= image_tag @submission.submission_image.large.url, width: 400 if @submission.submission_image.present? %>
+
+<%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submission_path %> |
