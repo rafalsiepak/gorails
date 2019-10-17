@@ -9,6 +9,8 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
   <body class="bg-gray-200 relative h-screen overflow-x-hidden">
@@ -114,5 +116,7 @@
     <%= yield %>
 
     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+
+
   </body>
 </html>
