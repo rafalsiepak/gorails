@@ -14,7 +14,7 @@ class CommunitiesController < ApplicationController
 
   # GET /communities/new
   def new
-    @community = current_user.communitites.build
+    @community = current_user.communities.build
   end
 
   # GET /communities/1/edit
