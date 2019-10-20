@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
   resources :communities
   resources :submissions do
-    resources :comments
+    resources :comments do
+      member do
+        put "upvote", to: "submissions#upvote"
+        put "downvote", to: "submissions#downvote"
+      end
+    end
   end
+  
   devise_for :users
-  get 'home/index'
+  resources :users, only: [:show], as: "profile"
   root to: "submissions#index"
 end

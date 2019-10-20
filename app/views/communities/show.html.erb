@@ -2,8 +2,9 @@
 
 <%= render "community_header", community: @community %>
 
+
 <% content_for :primary_content do %>
-  <% @community.submissions.each_with_index do |submission, index| %>
+  <% @community.submissions.each do |submission, index| %>
     <%= inject_feed_ad(index) unless active_subscriber? %>
     <%= render "submissions/submission", submission: submission %>
   <% end %>

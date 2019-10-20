@@ -2,6 +2,7 @@
 
 <% if @submissions.exists? %>
  <%= render @submissions %>
+
 <% else %>
   <div class="p-10 text-center">
     <%= render_svg "icons/empty", styles: "inline fill-current text-gray-400 mb-2" %>
