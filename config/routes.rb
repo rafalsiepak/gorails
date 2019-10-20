@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :communities
+
+  resources :communities do
+    resource :subscriptions
+
+  end
+
   resources :submissions do
     resources :comments do
       member do
@@ -8,7 +13,7 @@ Rails.application.routes.draw do
       end
     end
   end
-  
+
   devise_for :users
   resources :users, only: [:show], as: "profile"
   root to: "submissions#index"
