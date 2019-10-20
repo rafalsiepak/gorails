@@ -28,10 +28,20 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# webbit custom gems
+gem 'acts_as_votable', '~> 0.12.1'
+# temporary to make 6 work with Devise
 gem 'devise', '~> 4.7', '>= 4.7.1'
-gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
-gem 'inline_svg', '~> 1.3'
+gem 'valid_url', '~> 0.0.4'
+gem 'inline_svg', '~> 1.5', '>= 1.5.2'
+gem 'sidekiq', '~> 5.2', '>= 5.2.7'
+gem 'stripe', '~> 4.14'
+gem 'ransack', '~> 2.1', '>= 2.1.1'
+gem 'friendly_id', '~> 5.2', '>= 5.2.5'
+gem 'meta-tags', '~> 2.11', '>= 2.11.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
