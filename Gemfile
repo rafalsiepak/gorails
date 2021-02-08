@@ -32,7 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'acts_as_votable', '~> 0.12.1'
 # temporary to make 6 work with Devise
 gem 'devise', '~> 4.7', '>= 4.7.1'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'valid_url', '~> 0.0.4'
 gem 'inline_svg', '~> 1.5', '>= 1.5.2'
